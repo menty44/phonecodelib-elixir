@@ -3,19 +3,38 @@ defmodule Phonecodelib do
   Documentation for `Phonecodelib`.
   """
 
+#  @doc """
+#  Hello world.
+#
+#  ## Examples
+#
+#      iex> Phonecodelib.hello()
+#      :world
+#
+#  """
+#  def hello do
+#    :world
+#  end
+
   @doc """
-  Hello world.
+  Filter using country iso.˚
 
   ## Examples
 
-      iex> Phonecodelib.hello()
-      :world
+      iex> Phonecodelib.filter_by_iso "ke"
+      [
+         "%"{
+            "id"=> 110,
+            "iso""=>""KE",
+            "iso3""=>""KEN",
+            "name""=>""KENYA",
+            "nicename""=>""Kenya",
+            "numcode"=> 404,
+            "phonecode"=> 254
+         }
+      ]
 
   """
-  def hello do
-    :world
-  end
-
   def filter_by_iso(incoming) do
     IO.puts incoming
     {_a, b } = get_json()
@@ -23,6 +42,25 @@ defmodule Phonecodelib do
      |> get_in( [Access.filter(&(&1["iso"] === String.upcase(incoming)))])
   end
 
+  @doc """
+  Filter using country iso3.
+
+  ## Examples
+
+      iex> Phonecodelib.filter_by_iso3 "ken"
+      [
+         "%"{
+            "id"=> 110,
+            "iso""=>""KE",
+            "iso3""=>""KEN",
+            "name""=>""KENYA",
+            "nicename""=>""Kenya",
+            "numcode"=> 404,
+            "phonecode"=> 254
+         }
+      ]
+
+  """
   def filter_by_iso3(incoming) do
     IO.puts incoming
     {_a, b } = get_json()
@@ -30,6 +68,25 @@ defmodule Phonecodelib do
      |> get_in( [Access.filter(&(&1["iso3"] === String.upcase(incoming)))])
   end
 
+  @doc """
+  Filter using country name.
+
+  ## Examples
+
+      iex> Phonecodelib.filter_by_name "kenya"
+      [
+         "%"{
+            "id"=> 110,
+            "iso""=>""KE",
+            "iso3""=>""KEN",
+            "name""=>""KENYA",
+            "nicename""=>""Kenya",
+            "numcode"=> 404,
+            "phonecode"=> 254
+         }
+      ]
+
+  """
   def filter_by_name(incoming) do
     IO.puts incoming
     {_a, b } = get_json()
@@ -37,6 +94,25 @@ defmodule Phonecodelib do
      |> get_in( [Access.filter(&(&1["name"] === String.upcase(incoming)))])
   end
 
+  @doc """
+  Filter using country code/phonecode.
+
+  ## Examples
+
+      iex>  Phonecodelib.filter_by_phonecode 254
+      [
+         "%"{
+            "id"=> 110,
+            "iso""=>""KE",
+            "iso3""=>""KEN",
+            "name""=>""KENYA",
+            "nicename""=>""Kenya",
+            "numcode"=> 404,
+            "phonecode"=> 254
+         }
+      ]
+
+  """
   def filter_by_phonecode(incoming) do
     IO.puts incoming
     {_a, b } = get_json()
