@@ -3,19 +3,6 @@ defmodule Phonecodelib do
   Documentation for `Phonecodelib`.
   """
 
-#  @doc """
-#  Hello world.
-#
-#  ## Examples
-#
-#      iex> Phonecodelib.hello()
-#      :world
-#
-#  """
-#  def hello do
-#    :world
-#  end
-
   @doc """
   Filter using country iso.˚
 
