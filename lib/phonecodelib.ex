@@ -12,10 +12,10 @@ defmodule Phonecodelib do
       [
          "%"{
             "id"=> 110,
-            "iso""=>""KE",
-            "iso3""=>""KEN",
-            "name""=>""KENYA",
-            "nicename""=>""Kenya",
+            "iso"=>""KE",
+            "iso3"=>"KEN",
+            "name"=>"KENYA",
+            "nicename"=>"Kenya",
             "numcode"=> 404,
             "phonecode"=> 254
          }
@@ -38,10 +38,10 @@ defmodule Phonecodelib do
       [
          "%"{
             "id"=> 110,
-            "iso""=>""KE",
-            "iso3""=>""KEN",
-            "name""=>""KENYA",
-            "nicename""=>""Kenya",
+            "iso"=>"KE",
+            "iso3"=>"KEN",
+            "name"=>"KENYA",
+            "nicename"=>"Kenya",
             "numcode"=> 404,
             "phonecode"=> 254
          }
@@ -64,10 +64,10 @@ defmodule Phonecodelib do
       [
          "%"{
             "id"=> 110,
-            "iso""=>""KE",
-            "iso3""=>""KEN",
-            "name""=>""KENYA",
-            "nicename""=>""Kenya",
+            "iso"=>"KE",
+            "iso3"=>"KEN",
+            "name"=>"KENYA",
+            "nicename"=>"Kenya",
             "numcode"=> 404,
             "phonecode"=> 254
          }
@@ -90,10 +90,10 @@ defmodule Phonecodelib do
       [
          "%"{
             "id"=> 110,
-            "iso""=>""KE",
-            "iso3""=>""KEN",
-            "name""=>""KENYA",
-            "nicename""=>""Kenya",
+            "iso"=>"KE",
+            "iso3"=>"KEN",
+            "name"=>"KENYA",
+            "nicename"=>"Kenya",
             "numcode"=> 404,
             "phonecode"=> 254
          }
